@@ -11,7 +11,7 @@ function compute(){
     var year = currentDate.getFullYear();
     var maturityYear = parseInt(years) + parseInt(year);
     var maturityValue = parseInt(interest) + parseInt(principal);
-    var output = "If you deposit " + principal +"<br>at an interest rate of " + rate +"%.<br>You will receive an amount of " + maturityValue + "<br> at year " + maturityYear + ".<br>";
+    var output = "If you deposit " + principal +"<br>at an interest rate of " + rate +"%.<br>You will receive a total amount of " + maturityValue + "<br> (principal amount : "+principal+ " + interest amount: "+interest+ ") <br> by the year " + maturityYear + ".<br>";
     document.getElementById("result").innerHTML = output;
 }
 function displayRate(){
